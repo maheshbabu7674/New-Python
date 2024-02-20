@@ -38,3 +38,15 @@ func()
 ##  or  ##
 
 print(func())  ## None
+
+# Example 5:
+
+def cal(a,b):
+    print(a+b)
+cal(10,20)  #30
+
+  ## or   ##
+
+def cal(a,b):
+    return(a+b)
+print(cal(1,20)) #21    

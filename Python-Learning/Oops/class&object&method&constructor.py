@@ -126,4 +126,47 @@ mc=Myclass("David")    #passing parameter to the constructor
 
 
 # Example 9:
+# req: Emp
+      #constructor: eid, ename, sal
+    #display():print eid,ename,sal
 
+class Emp:
+    def __init__(self,eid,ename,sal):
+        self.eid=eid
+        self.ename=ename
+        self.sal=sal
+    def display(self):
+        print(self.eid,self.ename,self.sal)
+
+e1=Emp(101,"john",50000)
+e1.display()        
+
+e2=Emp(102,"john mathew",90000)
+e2.display()    
+
+# otput:
+# 101 john 50000
+# 102 john mathew 90000
+
+# Example 10:
+# req: Emp
+      #constructor: eid, ename, sal
+    #constructor:print eid,ename,sal
+
+class Emp:
+    def __init__(self,eid,ename,sal):
+        self.eid=eid
+        self.ename=ename
+        self.sal=sal
+    def __str__(self):
+        return(self.ename)
+
+e1=Emp(101,"john",50000)
+print(e1)        
+
+e2=Emp(102,"john mathew",90000)
+print(e2)  
+
+# output:
+# john
+# john mathew
